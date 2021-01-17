@@ -1,5 +1,5 @@
 {% set name = "ecell4" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/e/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 264d3cfce2fbaa4393ba134f8d6a2001c0099532f5e887e412ede10a08e3995f
+    sha256: 602bced4b70664df612bb980f9a8cca56a06bd4def7cc37e625fd2e79ec1f1df
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   
 requirements:
