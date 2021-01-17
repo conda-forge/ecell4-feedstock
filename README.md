@@ -5,11 +5,9 @@ Home: https://github.com/ecell/ecell4
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ecell4-feedstock/blob/master/LICENSE.txt)
 
 Summary: An integrated software environment for multi-algorithm, multi-timescale, multi-spatial-representation simulation
-
-
 
 Current build status
 ====================
