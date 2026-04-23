@@ -1,19 +1,18 @@
 {% set name = "ecell4" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/e/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 602bced4b70664df612bb980f9a8cca56a06bd4def7cc37e625fd2e79ec1f1df
+  - url: https://pypi.org/packages/source/e/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: 08691752c9ea788c310e5fd3c25de36f18382ed2b92a7769a4509b87dee2cf0c
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  
 requirements:
   host:
     - python >=3
@@ -43,4 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - kozo2
-    
+
